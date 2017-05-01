@@ -26,3 +26,9 @@ class AutorSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Autor
         fields = ('nombre', 'libros')
+
+class LibroSerializer(serializers.HyperlinkedModelSerializer):
+
+    class Meta:
+        model = Libro
+        fields = ('titulo', 'anio')
