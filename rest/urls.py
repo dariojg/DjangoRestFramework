@@ -18,6 +18,7 @@ from rest_framework import routers
 from restapp import views
 from django.contrib import admin
 
+#urls comments
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
